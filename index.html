@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Wan Scarlet | Independent Animator & VTuber (wan.ovh)</title>
+  <meta name="description" content="Official portal for Wan Scarlet. Independent animator, digital artist, and VTuber. Explore my animations, watch live streams, and support my creative journey!">
+  <meta name="keywords" content="Wan Scarlet, VTuber, Independent Animator, Wan.ovh, Animation, Live Stream, Sociabuzz, Ganknow, Youtube, Twitch, Tiktok, Digital Artist, Scarlet">
+  <meta name="author" content="Wan Scarlet">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://wan.ovh/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wan.ovh/">
+  <meta property="og:title" content="Wan Scarlet | Independent Animator & VTuber">
+  <meta property="og:description" content="Official portal for Wan Scarlet. Independent animator, digital artist, and VTuber. Explore my animations, watch live streams, and support my creative journey!">
+  <meta property="og:image" content="https://imagepaste.org/i/jcg6422m.png">
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://wan.ovh/">
+  <meta property="twitter:title" content="Wan Scarlet | Independent Animator & VTuber">
+  <meta property="twitter:description" content="Official portal for Wan Scarlet. Independent animator, digital artist, and VTuber. Explore my animations, watch live streams, and support my creative journey!">
+  <meta property="twitter:image" content="https://imagepaste.org/i/jcg6422m.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<?xml version='1.0' encoding='UTF-8'?><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path fill='%23ff0f4a' fill-rule='evenodd' d='M256 6 L500 506 L12 506 Z M256 238 L384 506 L128 506 Z '/><path fill='%23ff0f4a' d='M256 366 L378 502 L256 434 L134 502 Z '/></svg>">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wan Scarlet",
+    "url": "https://wan.ovh",
+    "email": "mailto:dm@wan.ovh",
+    "description": "I do independent activities like animation or else.",
+    "sameAs": [
+      "https://youtube.com/@WanScarlet",
+      "https://tiktok.com/@WanScarlet_",
+      "https://twitch.tv/wanscarlet",
+      "https://instagram.com/WanScarlet_",
+      "https://x.com/WanScarlet_"
+    ],
+    "image": "https://imagepaste.org/i/jcg6422m.png",
+    "jobTitle": "Independent Animator & VTuber"
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #ff0f4a;
+      --primary-glow: rgba(255, 15, 74, 0.6);
+      --bg-dark: #08030a;
+      --bg-card: rgba(20, 10, 25, 0.7);
+      --border-glow: rgba(255, 15, 74, 0.3);
+      --text-main: #ffffff;
+      --text-sub: #d1c5d8;
+      --card-border: rgba(255, 255, 255, 0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: 
+        linear-gradient(rgba(255, 15, 74, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 15, 74, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      z-index: -2;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+      top: -200px; right: -200px;
+      filter: blur(80px);
+      opacity: 0.4;
+      z-index: -1;
+      animation: pulse 8s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1) rotate(0deg); opacity: 0.3; }
+      100% { transform: scale(1.2) rotate(15deg); opacity: 0.6; }
+    }
+
+    .container {
+      width: 100%; max-width: 1000px;
+      display: flex;
+      background: var(--bg-card);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 40px rgba(255,15,74,0.1);
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -2px; left: -2px; right: -2px; bottom: -2px;
+      background: linear-gradient(135deg, var(--primary) 0%, transparent 40%, transparent 60%, var(--primary) 100%);
+      z-index: -1;
+      border-radius: 21px;
+      opacity: 0.5;
+    }
+
+    .image-section {
+      flex: 1.1;
+      position: relative;
+      background: linear-gradient(135deg, rgba(255,15,74,0.1), rgba(0,0,0,0.5));
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      min-height: 650px;
+      overflow: hidden;
+    }
+
+    .image-section::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.1) 2px, rgba(0,0,0,0.1) 4px);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .character-img {
+      width: 120%; max-width: 650px;
+      object-fit: contain;
+      z-index: 1;
+      filter: drop-shadow(0 20px 30px rgba(0,0,0,0.8));
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .image-section:hover .character-img { transform: scale(1.05) translateY(-15px); }
+
+    /* ===== Desktop: Fill the entire left panel with the character art ===== */
+    @media (min-width: 851px) {
+      .character-img {
+        position: absolute;
+        inset: 0;                /* stretch to all 4 edges of the panel */
+        width: 100%;
+        height: 100%;
+        max-width: none;         /* remove the 650px cap */
+        object-fit: cover;       /* scale art to full panel height (crops only transparent side margins) */
+        object-position: center; /* keep the character centered horizontally */
+      }
+
+      /* Scale in place on hover — no vertical shift, so no gap appears at the bottom */
+      .image-section:hover .character-img {
+        transform: scale(1.05);
+      }
+    }
+
+    .tech-badge {
+      position: absolute; top: 30px; left: 30px;
+      font-family: 'Chakra Petch', monospace;
+      font-size: 0.75rem; color: var(--primary);
+      letter-spacing: 3px; text-transform: uppercase;
+      border: 1px solid var(--primary);
+      padding: 5px 10px; background: rgba(0,0,0,0.5);
+      z-index: 3;
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    }
+
+    .info-section {
+      flex: 1;
+      padding: 50px 45px;
+      display: flex; flex-direction: column;
+      justify-content: center; z-index: 2;
+      position: relative;
+    }
+
+    .watermark {
+      position: absolute; bottom: -50px; right: -50px;
+      width: 300px; height: 300px; opacity: 0.03;
+      transform: rotate(-15deg); pointer-events: none;
+    }
+
+    .logo-header {
+      display: flex; align-items: center;
+      gap: 15px; margin-bottom: 15px;
+    }
+
+    .favicon-svg {
+      width: 45px; height: 45px;
+      filter: drop-shadow(0 0 15px var(--primary-glow));
+      animation: spin 10s linear infinite;
+    }
+
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+
+    .name {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 2.8rem; font-weight: 700; margin: 0;
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, #ffffff 20%, var(--primary) 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase; line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Chakra Petch', sans-serif;
+      color: var(--text-sub); letter-spacing: 4px;
+      font-size: 0.8rem; margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    .about {
+      font-size: 1.05rem; color: var(--text-sub);
+      line-height: 1.7; margin-bottom: 40px;
+      border-left: 3px solid var(--primary);
+      padding: 15px 20px;
+      background: rgba(255,255,255,0.02);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .btn-group { display: flex; flex-direction: column; gap: 12px; }
+
+    .btn-title {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 0.85rem; text-transform: uppercase;
+      letter-spacing: 3px; color: var(--primary);
+      margin: 20px 0 5px; font-weight: 600;
+      display: flex; align-items: center; gap: 10px;
+    }
+
+    .btn {
+      display: flex; align-items: center; gap: 15px;
+      padding: 14px 20px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px; color: #fff;
+      text-decoration: none; font-weight: 500;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: relative; overflow: hidden;
+    }
+
+    .btn:hover {
+      background: rgba(255, 15, 74, 0.15);
+      border-color: var(--primary);
+      transform: translateX(8px);
+      box-shadow: -5px 5px 20px rgba(255, 15, 74, 0.2);
+    }
+
+    .btn-icon {
+      width: 28px; height: 28px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; transition: transform 0.3s;
+    }
+
+    .btn:hover .btn-icon { transform: scale(1.2) rotate(-5deg); }
+
+    .sociabuzz { color: #25d366; }
+    .ganknow { color: #ffb300; }
+    .youtube { color: #ff0000; }
+    .tiktok { color: #ffffff; text-shadow: 1px 1px 0 #ff0050, -1px -1px 0 #00f2ea; }
+    .twitch { color: #9146ff; }
+    .instagram { 
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+    }
+    .x { color: #ffffff; }
+    .email { color: var(--primary); }
+
+    .btn-badge {
+      margin-left: auto;
+      font-family: 'Chakra Petch', monospace;
+      font-size: 0.7rem; text-transform: uppercase;
+      padding: 4px 8px; background: rgba(255,255,255,0.1);
+      border-radius: 4px; color: var(--text-sub);
+      letter-spacing: 1px;
+    }
+
+    .socials-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+
+    .social-btn { padding: 14px; justify-content: flex-start; }
+
+    @media (max-width: 850px) {
+      .container { flex-direction: column; border-radius: 25px; }
+      .image-section {
+        min-height: 450px;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        margin-bottom: -40px;
+      }
+      .character-img { width: 90%; }
+      .info-section { padding: 60px 30px 40px; z-index: 5; }
+      .name { font-size: 2.2rem; }
+      .socials-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <script>
+    // Force Canonical Domain (wan.ovh) and HTTPS
+    (function() {
+      var host = window.location.hostname;
+      var protocol = window.location.protocol;
+      
+      // Bypass redirect if testing locally on your computer
+      var isLocal = (host === 'localhost' || host === '127.0.0.1' || protocol === 'file:');
+      
+      // If NOT local, AND (domain is not wan.ovh OR not https) -> Redirect
+      if (!isLocal && (host !== 'wan.ovh' || protocol !== 'https:')) {
+        // Keep the exact same page path and URL parameters
+        var fullPath = window.location.pathname + window.location.search + window.location.hash;
+        window.location.replace('https://wan.ovh' + fullPath);
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <main class="container">
+    <div class="image-section">
+      <div class="tech-badge">System Online</div>
+      <img src="https://imagepaste.org/i/924bv5hn.png" alt="Wan Scarlet VTuber Character Bust" class="character-img">
+    </div>
+
+    <div class="info-section">
+      <svg class="watermark" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <path fill="rgba(255,255,255,0.02)" fill-rule="evenodd" d="M256 6 L500 506 L12 506 Z M256 238 L384 506 L128 506 Z "/>
+        <path fill="rgba(255,255,255,0.02)" d="M256 366 L378 502 L256 434 L134 502 Z "/>
+      </svg>
+
+      <div class="logo-header">
+        <svg class="favicon-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#ff0f4a" fill-rule="evenodd" d="M256 6 L500 506 L12 506 Z M256 238 L384 506 L128 506 Z "/>
+          <path fill="#ff0f4a" d="M256 366 L378 502 L256 434 L134 502 Z "/>
+        </svg>
+        <h1 class="name">Wan Scarlet</h1>
+      </div>
+      
+      <p class="subtitle">Creative Portal // wan.ovh</p>
+
+      <p class="about">I do independent activities like animation or else.</p>
+
+      <div class="btn-group">
+        <span class="btn-title"><i class="fa-solid fa-fire"></i> Donations & Support</span>
+        
+        <a href="https://sociabuzz.com/wanscarlet/donate" target="_blank" class="btn">
+          <span class="btn-icon sociabuzz"><i class="fa-solid fa-tower-broadcast"></i></span>
+          <span>Support me when Live!</span>
+          <span class="btn-badge">Sociabuzz</span>
+        </a>
+        
+        <a href="https://ganknow.com/wanscarlet/donate" target="_blank" class="btn">
+          <span class="btn-icon ganknow"><i class="fa-solid fa-mug-hot"></i></span>
+          <span>Send me a Tips!</span>
+          <span class="btn-badge">Ganknow</span>
+        </a>
+
+        <span class="btn-title"><i class="fa-solid fa-link"></i> Social Media</span>
+        
+        <div class="socials-grid">
+          <a href="https://youtube.com/@WanScarlet" target="_blank" class="btn social-btn">
+            <span class="btn-icon youtube"><i class="fa-brands fa-youtube"></i></span>
+            <span>YouTube</span>
+          </a>
+          <a href="https://tiktok.com/@WanScarlet_" target="_blank" class="btn social-btn">
+            <span class="btn-icon tiktok"><i class="fa-brands fa-tiktok"></i></span>
+            <span>TikTok</span>
+          </a>
+          <a href="https://twitch.tv/wanscarlet" target="_blank" class="btn social-btn">
+            <span class="btn-icon twitch"><i class="fa-brands fa-twitch"></i></span>
+            <span>Twitch</span>
+          </a>
+          <a href="https://instagram.com/WanScarlet_" target="_blank" class="btn social-btn">
+            <span class="btn-icon instagram"><i class="fa-brands fa-instagram"></i></span>
+            <span>Instagram</span>
+          </a>
+          <a href="https://x.com/WanScarlet_" target="_blank" class="btn social-btn">
+            <span class="btn-icon x"><i class="fa-brands fa-x-twitter"></i></span>
+            <span>X (Twitter)</span>
+          </a>
+        </div>
+
+        <!-- NEW CONTACT SECTION -->
+        <span class="btn-title"><i class="fa-solid fa-envelope"></i> Business & Contact</span>
+        <a href="mailto:dm@wan.ovh" class="btn">
+          <span class="btn-icon email"><i class="fa-solid fa-at"></i></span>
+          <span>Business Inquiries</span>
+          <span class="btn-badge">dm@wan.ovh</span>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

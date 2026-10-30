@@ -1,0 +1,8 @@
+# Redirect Cloudflare Pages default domain to Custom Domain
+https://*.pages.dev/* https://wan.ovh/:splat 301
+
+# Redirect www to non-www
+https://www.wan.ovh/* https://wan.ovh/:splat 301
+
+# Force HTTPS on the main domain
+http://wan.ovh/* https://wan.ovh/:splat 301
